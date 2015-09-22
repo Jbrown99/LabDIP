@@ -5,10 +5,24 @@
  */
 package dip.lab3.student.solution1;
 
+import javax.swing.JOptionPane;
+
+
+
 /**
  *
  * @author joshuabrown
  */
-public class GUIOutput {
+public class GUIOutput implements MessageOutput {
+
+    @Override
+    public void outputMessage(MessageInput message) {
+        
+        Message msg = message.getMessage();
+        JOptionPane.showMessageDialog(null,msg);
+        
+    }
+    
+    
     
 }

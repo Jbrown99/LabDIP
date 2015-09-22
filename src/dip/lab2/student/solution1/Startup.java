@@ -14,8 +14,10 @@ public class Startup {
     
     
     public static void main(String[] args) {
-        TipCalculatorService = new FoodTipCalculator(GOOD,50.00);
+        TipCalculatorService tcs = new FoodTipCalculator(setServiceRating.GOOD,50.00);
         TipCalculator tc = new TipCalculator();
+        double tip = tc.getTip(tcs);
+        System.out.println(tip);
         
     }
     

@@ -17,7 +17,7 @@ public class Startup {
     
     
     MessageInput input = new KeyboardInput();
-    MessageOutput output = new ConsoleOutput();
+    MessageOutput output = new GUIOutput();
     
     MessageManager manage = new MessageManager(input,output);
     manage.createMessage();
