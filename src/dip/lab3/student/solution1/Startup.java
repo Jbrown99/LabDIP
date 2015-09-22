@@ -9,8 +9,6 @@ package dip.lab3.student.solution1;
  *
  * @author joshuabrown
  */
-public interface MessageOutput {
-    
-    public void outputMessage(MessageInput message);
+public class Startup {
     
 }

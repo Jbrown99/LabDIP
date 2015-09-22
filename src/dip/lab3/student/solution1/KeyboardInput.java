@@ -5,10 +5,24 @@
  */
 package dip.lab3.student.solution1;
 
+import java.util.Scanner;
+
 /**
  *
  * @author joshuabrown
  */
-public class KeyboardInput {
+public class KeyboardInput implements MessageInput {
+
+    @Override
+    public Message getMessage() {
+        
+        Scanner keyboard = new Scanner(System.in);
+        String message = keyboard.nextLine();
+        Message msg = new Message(message);
+        return msg;
+        
+    }
+    
+    
     
 }
