@@ -14,8 +14,8 @@ public class ConsoleOutput implements MessageOutput {
     @Override
     public void outputMessage(MessageInput message) {
         
-        Message message = message.getMessage();
-        System.out.println(message.getStringMessage());
+        Message msg = message.getMessage();
+        System.out.println(msg.getStringMessage());
     }
 
     

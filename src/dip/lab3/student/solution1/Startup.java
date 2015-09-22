@@ -11,4 +11,19 @@ package dip.lab3.student.solution1;
  */
 public class Startup {
     
+    public static void main(String[] args) {
+        
+    
+    
+    
+    MessageInput input = new KeyboardInput();
+    MessageOutput output = new ConsoleOutput();
+    
+    MessageManager manage = new MessageManager(input,output);
+    manage.createMessage();
+    
+    
+    
+    
+}
 }

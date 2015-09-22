@@ -11,4 +11,18 @@ package dip.lab3.student.solution1;
  */
 public class MessageManager {
     
+    private MessageInput input;
+    private MessageOutput output;
+
+    public MessageManager(MessageInput input, MessageOutput output) {
+        this.input = input;
+        this.output = output;
+    }
+    
+    
+    public void createMessage(){
+        
+        output.outputMessage(input);
+    }
+    
 }
